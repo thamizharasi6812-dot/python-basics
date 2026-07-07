@@ -1,0 +1,1 @@
+('be proud to be who you are\nwho you are is beautiful and amazing', 'Python\nJava\nC++\nPython\nSQL\n ')

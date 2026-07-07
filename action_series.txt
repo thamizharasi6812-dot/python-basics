@@ -1,0 +1,87 @@
+high & low:thai series
+high school frenemy:thai series
+weak hero class:korean series
+study group:korean series
+# function
+file=open('student_record','w')
+file.write(' 1.Ariel - 99\n 2.Ben -86\n 3.Ceri -78\n 4.Dark -86 \n5. Elsa -56')
+
+records=[]
+def read_student(student_record):
+ file=open('student.txt','r')
+ file.read()
+ pass
+def calculate_average(records):
+    records=[]
+    file=open('student_records.txt','r')
+    for line in file:
+     name,marks=line.strip().split(',')
+     records.append(int(marks))
+     total=sum(records)
+     average: float=total/len(records)
+print('average of the class=',average)
+
+hero = "Superman"
+ 
+def director_office():
+    hero = "Batman"
+ 
+    def shooting_spot():
+        print(hero)
+ 
+    shooting_spot()
+ 
+director_office()
+ 
+ 
+ 
+ 
+ 
+hero = "Superman"   # Global
+ 
+def director_office():
+ 
+    hero = "Batman"   # Enclosing
+ 
+    def shooting_spot():
+ 
+        hero = "Spiderman"   # Local
+ 
+        def editing_room():
+ 
+            hero = "Ironman"   # Local to editing_room
+ 
+            print("editing room :", hero)
+ 
+        editing_room()
+ 
+        print("shooting spot :", hero)
+ 
+    shooting_spot()
+ 
+    print("director office :", hero)
+ 
+director_office()
+ 
+print("global :", hero)
+ # email
+import re
+email=input('enter a email:')
+pattern=r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/'
+if re.match(pattern,email):
+    print('valid email')
+else:
+    print('invalid email')
+
+username,domain=email.split('@')
+print(username)
+print(domain)
+
+is_gmail='yes'
+if domain.lower()=='gmail.com':
+    print('valid domain')
+else:
+    print('invalid domain')
+
+
+ from bs4 import BeautifulSoup

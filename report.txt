@@ -1,0 +1,4 @@
+INFO Login successful
+ ERROR Invalid password
+NFO Data loaded
+ERROR Database connection failed
