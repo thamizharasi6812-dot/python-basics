@@ -50,3 +50,75 @@ b2.display()
 b3.display()
 library.show_library()
 library.message()
+
+# single inheritance
+class Flower:
+     def bloom(self):
+          print('The flower is blooming')
+class Lotus(Flower):
+     def colour(self):
+          print('Lotus is pink in colour')
+f=Lotus()
+f.diplay()
+f.bloom()
+f.colour()
+
+# multiple inheritance
+
+class father:
+     def skill(self):
+          print('accountance')
+class mother:
+     def work(self):
+          print('teacher')
+class child(father,mother):
+     def talent(self):
+          print('artist')
+c=child()
+c.display()
+c.skill()
+c.work()
+c.talent()
+
+# multilevel inhertance
+class super_senior:
+     def notes(self):
+          print('python basics notes')
+class senior(super_senior):
+     pass
+class junior(senior):
+     pass
+j=junior()
+j.notes()
+
+# hierarchical inhertance
+class mother:
+     def food(self):
+          print('dinner is dosa')
+class brother(mother):
+     pass
+class sister(mother):
+     pass
+b=brother()
+s=sister()
+b.food()
+s.food()
+
+# hybrid inhertance
+class programming:
+     def language(self):
+          print('programming language')
+class Python(programming):
+     def python(self):
+          print('python is easy to learn')
+class Java(programming):
+     def java(self):
+          print('java is high level language')
+class User(Python,Java):
+     def user(self):
+          print('user can use both python and java')
+u=User()
+u.language()
+u.python()
+u.java()
+u.user()
